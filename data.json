@@ -1,0 +1,14 @@
+{
+    "status": {
+        "code": 1001,
+        "msg": "正常"
+    },
+    "result": {
+        "path": "/mlcdn/c45406/230320_3lia70k9gj8g936g668j76011dhg2_231x500.jpg",
+        "url": "http: //s10.mogucdn.com/mlcdn/c45406/230320_3lia70k9gj8g936g668j76011dhg2_231x500.jpg",
+        "surl": "https://s5.mogucdn.com/mlcdn/c45406/230320_3lia70k9gj8g936g668j76011dhg2_231x500.jpg",
+        "fileName": null,
+        "mediaId": "",
+        "size": 52261
+    }
+}

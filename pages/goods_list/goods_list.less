@@ -1,0 +1,38 @@
+/* pages/goods_list/goods_list.wxss */
+.first_tab {
+    .good_item{
+        display: flex;
+        border-bottom: 1rpx solid #ccc;
+        .good_img_wrap{
+            flex: 2;
+            display: flex;            
+            justify-content: center;
+            align-content: center;
+            image{
+                width: 70%;
+            }
+
+        }
+        .goods_info_wrap{
+            flex: 3;
+            display: flex;
+            // 主轴方向 元素垂直排列
+            flex-direction: column;
+            // 均匀排列每个元素 每个元素周围分配相同的空间
+            justify-content: space-around;
+            .good_name{
+                // 省略号效果
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+
+            }
+            .good_price{
+                color: var(--themeColor);
+                font-size: 32rpx;
+
+            }
+        }
+    }
+}

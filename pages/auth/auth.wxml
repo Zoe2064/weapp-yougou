@@ -1,0 +1,11 @@
+<!--
+ * @Description: 
+ * @Author: Zoe
+ * @Date: 2023-03-10 14:40:47
+ * @LastEditTime: 2023-03-17 16:37:39
+ * @LastEditors: Zoe
+-->
+<!--pages/auth/auth.wxml-->
+<button type="primary" plain open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">
+    获取授权
+</button>

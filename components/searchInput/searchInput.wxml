@@ -1,0 +1,14 @@
+<!--
+ * @Description: 
+ * @Author: Zoe
+ * @Date: 2023-03-10 15:48:29
+ * @LastEditTime: 2023-03-21 19:43:21
+ * @LastEditors: Zoe
+-->
+<!--components/searchInput/searchInput.wxml-->
+<view class="search_input">
+    <navigator url="/pages/search/search" open-type="navigate">
+        搜索
+    </navigator>
+
+</view>

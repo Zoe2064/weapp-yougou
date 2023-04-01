@@ -1,0 +1,28 @@
+/*
+ * @Description: 
+ * @Author: Zoe
+ * @Date: 2023-03-10 15:48:29
+ * @LastEditTime: 2023-03-21 19:47:25
+ * @LastEditors: Zoe
+ */
+// components/searchInput/searchInput.js
+Component({
+  /**
+   * 组件的属性列表
+   */
+  properties: {
+
+  },
+
+  /**
+   * 组件的初始数据
+   */
+  data: {
+  },
+
+  /**
+   * 组件的方法列表
+   */
+  methods: {
+  }
+})

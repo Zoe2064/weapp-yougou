@@ -1,0 +1,10 @@
+<!--
+ * @Description:  
+ * @Author: Zoe
+ * @Date: 2023-03-10 14:40:47
+ * @LastEditTime: 2023-03-17 22:04:58
+ * @LastEditors: Zoe
+-->
+<!--pages/login/login.wxml-->
+
+<button type="primary" plain bindtap="getUserProfile" >登陆 </button>

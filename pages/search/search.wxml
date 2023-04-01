@@ -1,0 +1,30 @@
+<!--
+ * @Description: 
+ * @Author: Zoe
+ * @Date: 2023-03-10 14:40:47
+ * @LastEditTime: 2023-03-21 19:59:31
+ * @LastEditors: Zoe
+-->
+<!--pages/search/search.wxml-->
+<!-- <view class="search_row">
+    <input value="{{inpValue}}" placeholder="请输入您要搜索的商品" bindinput="handleInput" />
+    <button hidden="{{!isFocus}}" bindtap="handleCancel">取消</button>
+</view> -->
+
+
+<van-search
+class="search"
+value="{{ inpValue }}"
+placeholder="请输入搜索关键词"
+shape="round"
+show-action
+bind:search="onSearch"
+bind:cancel="onCancel"
+/>
+
+<view class="search_content">
+    <navigator class="search_item" wx:for="{{goods}}" wx:key="goods_id"
+        url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}">
+        {{item.goods_name}}
+    </navigator>
+</view>

@@ -1,0 +1,12 @@
+<!--
+ * @Description: 
+ * @Author: Zoe
+ * @Date: 2023-03-20 12:10:42
+ * @LastEditTime: 2023-03-20 13:37:33
+ * @LastEditors: Zoe
+-->
+<!--components/UpImg/UpImg.wxml-->
+<view class="up_img_wrap">
+    <image src="{{src}}"/>
+        <icon type="clear" size="19" color="red"></icon>
+</view>

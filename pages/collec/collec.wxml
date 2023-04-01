@@ -1,0 +1,33 @@
+<!--
+ * @Description: 
+ * @Author: Zoe
+ * @Date: 2023-03-10 14:40:47
+ * @LastEditTime: 2023-03-19 15:16:15
+ * @LastEditors: Zoe
+-->
+<!--pages/collec/collec.wxml-->
+<Tabs tabs="{{tabs}}" bind:tabsItemChange="handleTabsItemChange">
+    <view class="collect_main">
+        <view class="collect_title">
+            <text class="collect_tips active">全部</text>
+            <text class="collect_tips">正在热卖</text>
+            <text class="collect_tips">即将上线</text>
+        </view>
+        <view class="collect_content">
+            <navigator class="good_item" wx:for="{{collect}}" wx:key="goods_id"
+            url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}"
+            >
+                <!-- 左侧 图片容器 -->
+                <view class="good_img_wrap">
+                    <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'http://image5.suning.cn/uimg/b2c/newcatentries/0000000000-000000000160455569_1_400x400.jpg'}}"></image>
+                </view>
+
+                <!-- 右侧 商品容器 -->
+                <view class="goods_info_wrap">
+                    <view class="good_name">{{item.goods_name}}</view>
+                    <view class="good_price">¥ {{item.goods_price}}</view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</Tabs>

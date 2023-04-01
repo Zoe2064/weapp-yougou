@@ -1,0 +1,19 @@
+<!--
+ * @Description: 
+ * @Author: Zoe
+ * @Date: 2023-03-12 17:30:48
+ * @LastEditTime: 2023-03-12 18:32:07
+ * @LastEditors: Zoe
+-->
+<!--components/tabs/tabs.wxml-->
+<vie class="tabs">
+    <view class="tabs_title">
+        <view wx:for="{{tabs}}" wx:key="id" class="title_item {{item.isActive?'active':''}}" bindtap="handleItemTap"
+            data-index="{{index}}">
+            {{item.value}}
+        </view>
+    </view>
+    <view class="tabs_content">
+        <slot></slot>
+    </view>
+</vie>

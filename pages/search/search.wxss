@@ -1,0 +1,13 @@
+.search_content {
+  padding-top: 10rpx;
+}
+.search_content .search_item {
+  border-radius: 10rpx;
+  background-color: #fff;
+  font-size: 26rpx;
+  padding: 15rpx 20rpx;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,38 @@
+<!--
+ * @Description: 
+ * @Author: Zoe
+ * @Date: 2023-03-10 14:40:47
+ * @LastEditTime: 2023-03-20 13:59:08
+ * @LastEditors: Zoe
+-->
+<!--pages/feedback/feedback.wxml-->
+<Tabs tabs="{{tabs}}" bind:tabsItemChange="handleTabsItemChange">
+    <view class="fb_main">
+        <view class="fb_title">问题的种类</view>
+        <view class="fd_tips">
+            <text>功能建议</text>
+            <text>遇到购买问题</text>
+            <text>性能问题</text>
+            <text>其他</text>
+        </view>
+        <view class="fd_content">
+            <textarea value="{{textVal}}" bindinput="handleTextInput" placeholder="请描述一下您的问题" cols="30" rows="10"></textarea>
+            <view class="fb_tool" >
+                <button bindtap="handleChooseImg">+</button>
+                <view class="up_img_item"
+                wx:for="{{chooseImgs}}"
+                wx:key="index"
+                bindtap="handleRemoveImage"
+                data-index="{{index}}">
+                    <UpImg src="{{item}}"></UpImg>
+                </view>
+            </view>
+        </view>
+        <view class="form_btm_wrap">
+            <button bindtap="handleFormSubmit" type="warn">
+                <icon type="success_no_circle" size="20" color="white"></icon>
+                提交
+            </button>
+        </view>
+    </view>
+</Tabs>

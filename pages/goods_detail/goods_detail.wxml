@@ -1,0 +1,54 @@
+<!--
+ * @Description: .
+ * @Author: Zoe
+ * @Date: 2023-03-10 14:40:47
+ * @LastEditTime: 2023-03-18 21:47:57
+ * @LastEditors: Zoe
+-->
+<!--pages/goods_detail/goods_detail.wxml-->
+<view class="detail_swiper">
+    <swiper autoplay indicator-dots circular>
+        <swiper-item wx:for="{{goods_detail.pics}}" wx:key="pics_id"
+        bindtap="handlePreviewImage"
+        data-url="item.pics_mid">
+            <image src="{{item.pics_mid}}" mode="widthFix"/>
+        </swiper-item>
+    </swiper>
+</view>
+
+<view class="goods_price">¥ {{goods_detail.goods_price}}</view>
+<view class="goods_name_row">
+    <view class="goods_name">{{goods_detail.goods_name}}</view>
+    <view class="goods_collect" bindtap="handleCollect">
+        <!-- style样式里面的iconfont -->
+        <text class="iconfont {{isCollect?'icon-favorites-fill':'icon-favorites'}}"></text>
+        <view class="collect_text">收藏</view>
+    </view>
+</view>
+
+<view class="good_info">
+    <view class="good_info_title">图文详情</view>
+    <view class="goods_info_content">
+        <!-- 使用富文本 -->
+        <rich-text nodes="{{goods_detail.goods_introduce}}"></rich-text>
+    </view>
+</view>
+
+<view class="btm_bool">
+    <view class="tool_item">
+        <view class="iconfont icon-kefu" ></view>
+        <view>客服</view>
+        <button open-type="contact"></button>
+    </view>
+    <view class="tool_item">
+        <view class="iconfont icon-share"></view>
+        <view>分享</view>
+        <button open-type="share"></button>
+    </view>
+    <navigator url="/pages/cart/cart" open-type="switchTab" class="tool_item" >
+        <view class="iconfont icon-cart_light"></view>
+        <view>购物车</view>
+    </navigator>
+    <view class="tool_item btn_cart" bindtap="handleCartAdd">加入购物车</view>
+    <view class="tool_item btn_buy">立即购买</view>
+</view>

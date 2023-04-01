@@ -1,0 +1,67 @@
+/* pages/feedback/feedback.wxss */
+page {
+    background-color: #eee;
+}
+
+.fb_main {
+    padding: 20rpx;
+    color: #666;
+
+    .fb_title {}
+
+    .fd_tips {
+        display: flex;
+        // 换行效果
+        flex-wrap: wrap;
+
+        text {
+            margin: 20rpx 10rpx;
+            width: 30%;
+            padding: 10rpx;
+            text-align: center;
+            background-color: #fff;
+        }
+    }
+
+    .fd_content {
+        background-color: #fff;
+
+        textarea {
+            padding: 10px;
+        }
+
+        .fb_tool {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 20rpx;
+
+            button {
+                margin: 0;
+                width: 90rpx;
+                height: 90rpx;
+                font-size: 40rpx;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 20rpx;
+                margin-top: 20rpx;
+                color: #ccc;
+            }
+            .up_img_item{
+                margin-left: 20rpx;
+                margin-top: 20rpx;
+            }
+        }
+    }
+
+    .form_btm_wrap {
+        margin-top: 40rpx;
+        display: flex;
+        justify-content: flex-end;
+
+        button{
+            width: 60%;
+        } 
+    }
+}
